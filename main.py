@@ -4,6 +4,7 @@ SERIAL_PORT = "/dev/ttyUSB0"
 ser = serial.Serial(SERIAL_PORT)
 
 while(True):
-	print ser.readline()
+	line = ser.readline()
+	print line, "x"
 	
 
